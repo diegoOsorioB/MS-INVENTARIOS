@@ -31,6 +31,13 @@ public class InventarioController {
         return ResponseEntity.ok(inventarioService.findById(id));
     }
 
+    @GetMapping("/servicio/{id_servicio}")
+    public ResponseEntity<List<Inventario>> getInventariosByServicio(@PathVariable int id_servicio) {
+        List<Inventario> inventarios = inventarioService.findByServicio(id_servicio);
+        return ResponseEntity.ok(inventarios);
+    }
+
+
     @PostMapping
     public ResponseEntity<Inventario> save(@RequestBody Inventario inventario) {
         return ResponseEntity.ok(inventarioService.save(inventario));

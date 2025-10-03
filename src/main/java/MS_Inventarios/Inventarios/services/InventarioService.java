@@ -29,6 +29,12 @@ public class InventarioService {
                 .orElseThrow(()->new Excepciones.itemNotFound(id));
     }
 
+    public List<Inventario> findByServicio(int id_servicio) {
+        return inventarioRepository.findInventariosByServicio(id_servicio);
+    }
+
+
+
     public Inventario save(Inventario inventario) {
 
        try {

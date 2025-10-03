@@ -29,7 +29,11 @@ public class JwtFilter extends OncePerRequestFilter {
                                     HttpServletResponse response,
                                     FilterChain filterChain)
             throws ServletException, IOException {
+
         String token = request.getHeader("Authorization");
+        String authHeader = request.getHeader("Authorization");
+        System.out.println("JWT header recibido: " + authHeader);
+
 
         if (token != null && token.startsWith("Bearer ")) {
             try {
@@ -46,13 +50,11 @@ public class JwtFilter extends OncePerRequestFilter {
                 response.getWriter().println("Token invalido");
                 return;
             }
-        } else {
-            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            response.getWriter().println("Token no valido");
-            return;
         }
 
+        // Si no hay token, solo seguimos con la cadena de filtros (permitAll)
         filterChain.doFilter(request, response);
     }
+
 
 }
