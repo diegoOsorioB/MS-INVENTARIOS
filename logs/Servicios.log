@@ -1,0 +1,83 @@
+2025-10-02T15:05:19.585-06:00  INFO 5180 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : Starting InventariosApplication using Java 21.0.8 with PID 5180 (C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios\target\classes started by diego in C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios)
+2025-10-02T15:05:19.591-06:00  INFO 5180 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T15:05:19.697-06:00  INFO 5180 --- [Servicios] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-02T15:05:19.699-06:00  INFO 5180 --- [Servicios] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-02T15:05:20.900-06:00  INFO 5180 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T15:05:20.969-06:00  INFO 5180 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2025-10-02T15:05:21.619-06:00  WARN 5180 --- [Servicios] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-02T15:05:21.635-06:00  INFO 5180 --- [Servicios] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-02T15:05:21.675-06:00 ERROR 5180 --- [Servicios] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: "$8085  "
+    Origin: class path resource [application.properties] - 11:13
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "$8085")
+
+Action:
+
+Update your application's configuration
+
+2025-10-02T18:48:09.994-06:00  INFO 19604 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : Starting InventariosApplication using Java 21.0.8 with PID 19604 (C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios\target\classes started by diego in C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios)
+2025-10-02T18:48:09.995-06:00  INFO 19604 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T18:48:10.992-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T18:48:11.005-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2025-10-02T18:48:11.372-06:00  WARN 19604 --- [Servicios] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-02T18:48:11.381-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-02T18:48:11.449-06:00 ERROR 19604 --- [Servicios] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: "${SERVER_PORT}  # Se pasa al arrancar"
+    Origin: class path resource [application.properties] - 11:13
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "${SERVER_PORT}#Sepasaalarrancar")
+
+Action:
+
+Update your application's configuration
+
+2025-10-02T18:48:13.971-06:00  INFO 19604 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : Starting InventariosApplication using Java 21.0.8 with PID 19604 (C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios\target\classes started by diego in C:\Users\diego\Desktop\Proyecto-Cotizador\Inventarios)
+2025-10-02T18:48:13.972-06:00  INFO 19604 --- [Servicios] [restartedMain] M.Inventarios.InventariosApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-10-02T18:48:14.335-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02T18:48:14.351-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interface.
+2025-10-02T18:48:14.521-06:00  WARN 19604 --- [Servicios] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server
+2025-10-02T18:48:14.526-06:00  INFO 19604 --- [Servicios] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-10-02T18:48:14.532-06:00 ERROR 19604 --- [Servicios] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'server.port' to java.lang.Integer:
+
+    Property: server.port
+    Value: "${SERVER_PORT}  # Se pasa al arrancar"
+    Origin: class path resource [application.properties] - 11:13
+    Reason: failed to convert java.lang.String to java.lang.Integer (caused by java.lang.NumberFormatException: For input string: "${SERVER_PORT}#Sepasaalarrancar")
+
+Action:
+
+Update your application's configuration
+
